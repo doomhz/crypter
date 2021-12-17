@@ -2,4 +2,6 @@
 
 ### Usage
 
-Open `dist/index.html` file in your browser to encrypt/decrypt your wallet secret seed. 
+- Save [dist/index.html](dist/index.html) file to your computer.
+- Open the HTML saved file in your browser.
+- Encrypt/decrypt your wallet secret seed. 
