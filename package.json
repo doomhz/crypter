@@ -1,0 +1,37 @@
+{
+  "name": "crypter",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src scripts",
+    "lint-fix": "eslint --fix src scripts",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doomhz/crypter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doomhz/crypter/issues"
+  },
+  "homepage": "https://github.com/doomhz/crypter#readme",
+  "dependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "pbkdf2": "^3.1.2",
+    "react-dev-utils": "^12.0.0"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "stream-browserify": "^3.0.0",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  }
+}

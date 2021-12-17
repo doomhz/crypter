@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Crypto keys encryption tools - Crypter</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+</head>
+<body class="layout">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">Crypto keys encryption tools</h1>
+
+        <section class="section">
+          <div>
+            <h2 class="subtitle">Encrypt</h2>
+            <div class="field">
+              <label class="label">Seed</label>
+              <div class="control">
+                <textarea id="encrypt-seed" class="textarea"></textarea>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Password</label>
+              <div class="control">
+                <textarea id="encrypt-pass" class="textarea"></textarea>
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <button class="button is-link" id="encrypt-btn" onclick="encryptSeedWithPass()">Encrypt seed with pass</button>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Encrypted seed</label>
+              <div class="control">
+                <textarea id="encrypt-out" class="textarea" disabled></textarea>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div>
+            <h2 class="subtitle">Decrypt</h2>
+            <div class="field">
+              <label class="label">Encrypted seed</label>
+              <div class="control">
+                <textarea id="decrypt-seed" class="textarea"></textarea>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Password</label>
+              <div class="control">
+                <textarea id="decrypt-pass" class="textarea"></textarea>
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <button class="button is-link" id="decrypt-btn" onclick="decryptSeedWithPass()">Decrypt seed with pass</button>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Decrypted seed</label>
+              <div class="control">
+                <textarea id="decrypt-out" class="textarea" disabled></textarea>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </section>
+<!--  <script src="main.js"></script>-->
+</body>
+</html>
