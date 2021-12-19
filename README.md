@@ -10,6 +10,6 @@
 
 ##### Run online
 
-- Open code in [JSFiddle](https://jsfiddle.net/n8q4k7hx/1/) or [JSEditor](https://jseditor.io/?key=f9bb74d15f4211ecb79fc4377264e2bc-ver-2)
+- Open code in [JSFiddle](https://jsfiddle.net/2gtq4810/) or [JSEditor](https://jseditor.io/?key=fb01d954610a11ecb79fc4377264e2bc)
 - Press `Run`
 - Encrypt/decrypt your wallet secret seed.
