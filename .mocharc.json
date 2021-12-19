@@ -1,0 +1,9 @@
+{
+  "recursive": true,
+  "colors": true,
+  "exit": true,
+  "diff": true,
+  "timeout": 30000,
+  "extension": ["js"],
+  "spec": "tests/**/*.js"
+}
