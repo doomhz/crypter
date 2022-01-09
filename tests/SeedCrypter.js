@@ -5,9 +5,9 @@ describe('SeedCrypter', () => {
   const crypter = new SeedCrypter();
   const textToEncrypt = 'gaffe reward mask banquet slab mirror identity cart kit organize ambition apathy retain amuse minor grave insert witch spill precede leader hour salmon violation';
   const password = 'myverylongsecretpasswordthatnobodyshouldknowexceptme';
-  const salt = 'NnPEmbI4Dv6v';
-  const iv = 'a1f35b76e2d006884e4906311648b699';
-  const encryptedContent = 'mwWaYyH3y2dq590LUkTcL0lKVPF09nezUb0sXT4dt8zv4fKFhJ/KPl31jrjLkb5gvSazHu41Ml8IEsVGlfc80uA+EQA6G0ZqQaE5o35qGnGINjI+ySET7v8s2/dPB0An3+xF4Bals2PTktzAtgZvhT0h6IKb2khOmgyWA+skfuXUd8iJ0ZxzuletrgQEErETSUeszIUXbvMQMkHQziOBjBJZdC7jNIVT+o37yOY8leY=';
+  const salt = '486644334d756735';
+  const iv = '0e70dec0885c98fd55d8df6ef4c87744';
+  const encryptedContent = 'U2FsdGVkX19IZkQzTXVnNXjb3XpEQRTty7/y73wFxxl18fe373QHs6qIKagg3OwApSTX+S9F4e2B1bhj9kkRv7kBM/ILwe/iJKySVG6YMkBP2Y1xUd/aM8dtkLVQuKx+naao72NMIiYHYi4PVAQK7UW8mRvc9+HvnloDRYwKw+MWW4f3CdLa6r6FouRlb3QDoGCH4tu0pVBwkTfjNDgM2iUfQjsw/yfU8xzio4gGLle6cPdLbQDgSbH63HyiaDXm';
 
   describe('encrypt', () => {
     it('returns an encrypted string with the given password', async () => {
@@ -39,6 +39,13 @@ describe('SeedCrypter', () => {
       should(crypter.unpackageComponents(payload)).containEql({
         salt, iv, encryptedContent,
       });
+    });
+  });
+
+  describe('generateSalt', () => {
+    it('returns a random salt', async () => {
+      const newSalt = await crypter.generateSalt();
+      should(newSalt.length).eql(8);
     });
   });
 });
